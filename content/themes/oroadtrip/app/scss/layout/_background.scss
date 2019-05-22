@@ -1,0 +1,41 @@
+.background {
+    grid-area: background;
+    background: {
+        size: cover;
+        position: center center;
+    }
+    position: relative;
+
+    &__link {
+        display: flex;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        // Translate X/Y sert à recalculer en retirant une partie de sa propre taille (ex pour centrer parfaitement)
+        transform: translateX(-50%);
+        
+
+        &__map {
+            bottom: 20%;
+            justify-content: center;
+            text-decoration: none;
+            color: $color-secondary;
+            padding: $gutter;
+            font-size: 1.5rem;
+            background-color: transparentize($color: $color-primary, $amount: .4);
+            font-family: $font-stack-title;
+            letter-spacing: 1px;
+
+            padding: 1rem 3rem;
+            padding-bottom: 1.3rem;
+            border-radius: 50px;
+
+            &:hover {
+                background-color: transparentize($color: $color-secondary, $amount: .2);
+
+            }
+            
+        }
+    }
+}
+

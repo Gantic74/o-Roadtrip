@@ -1,0 +1,117 @@
+.main {
+    grid-area: main;
+
+    &__posts {
+        margin: 1.5rem $gutter-large;  
+        background-color: $color-secondary;
+
+        @include breakpoint-medium {
+            margin: 1.5rem $gutter-extra-large;
+        }
+        @include breakpoint-large {
+            margin: 1.5rem $gutter-large;
+        }
+
+        &__article {
+            display: flex;
+            margin-bottom: $gutter;
+            
+            @include breakpoint-medium {
+                margin-left: 15%;
+                width: 70%;
+            }
+            @include breakpoint-large {
+                width: 100%;
+                margin-left: 7%;
+                margin-bottom: $gutter;
+            }
+            
+            &:hover {
+                background-color: transparentize($color: #bbbbbb, $amount: .9);
+                filter: sepia(.5);
+                transition: $duration ease-in-out;
+            }
+
+            @include breakpoint-medium {
+                margin-bottom: $gutter-very-large;
+            }
+
+            &__container {
+                width: 42%;
+                margin-right: $gutter;
+
+                @include breakpoint-medium {
+                    margin-right: $gutter-large;
+                }
+            }
+
+            &__content {
+                flex-direction: row;
+                width: 65%;
+
+                @include breakpoint-medium {
+                    margin-right: 30px;
+                }
+
+                &__text {
+                    font-size: .9rem;
+                    margin-bottom: 1rem;
+
+                    @include breakpoint-medium {
+                        font-size: 1.8rem;
+                        margin-bottom: 1.5rem; 
+                    }
+                    @include breakpoint-large {
+                        font-size: 1rem;
+                    }
+                }
+
+                &__title {
+                    margin-bottom: .5rem;
+
+                    @include breakpoint-medium {
+                        font-size: 2.5rem;
+                        margin-bottom: 2rem;
+                    }
+                    @include breakpoint-large {
+                        font-size: 1.5rem;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+                
+                &__link {
+                    font-size: .8rem;
+                    text-decoration: none;
+                    color: $color-ternary;
+                    font-style: italic;
+                    margin-left: 2rem;
+
+                    @include breakpoint-medium {
+                        font-size: 1.3rem;
+                    }
+                    @include breakpoint-large {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        &__title {
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            text-align: center;
+
+            @include breakpoint-medium {
+                font-size: 4rem;
+                margin: 4rem 0;
+                margin-bottom: 5rem;
+            }
+
+            @include breakpoint-large {
+                font-size: 2rem;
+                margin: 2rem 0;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.header {
+
+    &__logo {
+        display: block;
+        
+
+        img {
+            max-width: 350px;
+            padding-bottom: 2rem;
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.header {
+    grid-area: background;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    background-color: $color-secondary;
+    padding: .4rem 2rem;
+    height: 7rem;
+
+    &--fixed {
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        border-bottom: 2px dotted transparentize($color: $color-ternary, $amount: .8);
+        top: -10rem;
+    }
+
+
+    @include breakpoint-medium {
+        height: 10rem;
+    }
+
+    &__logo__container {
+        width: 10rem;
+        margin-left: 50px;
+
+
+        @include breakpoint-medium {
+            width: 15%; 
+        }
+        
+    }
+    &__user__container__icon {
+            margin-right: 50px;
+            text-decoration: none;
+            color: $color-primary;
+    }
+}
+
+header .fa-user {
+    &--hidden {
+        color: #FFF;
+    }
+}

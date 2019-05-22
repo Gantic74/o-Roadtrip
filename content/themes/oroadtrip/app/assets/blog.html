@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>oRoadTrip</title>
+	<!--A décommenter si on veut inclure le css dans le build--->
+	<!--<link rel="stylesheet" href="css/style.css" />-->
+</head>
+<body class="default-layout">
+	 <!--  <div class="home__container">-->
+	<div class="default-layout__container">
+<!-- HEADER / NAV -->
+
+		<header class="header">
+			
+			<div class="header__nav__container">
+				<nav role="navigation">
+					<div id="menuToggle">
+						<!--
+						A fake / hidden checkbox is used as click reciever,
+						so you can use the :checked selector on it.
+						-->
+						<input class="input__burger" type="checkbox" />
+						
+						<!--
+						Some spans to act as a hamburger.
+						
+						They are acting like a real hamburger,
+						not that McDonalds stuff.
+						-->
+						<span class="nav__burger"></span>
+						<span class="nav__burger"></span>
+						<span class="nav__burger"></span>
+						
+						<!--
+						Too bad the menu has to be inside of the button
+						but hey, it's pure CSS magic.
+						-->
+						<ul class="menu" id="menu">
+							<div class="menu__search">
+								<i class="menu__search__icon fa fa-search"></i>
+								<input class="menu__search__input" type="text" placeholder="Recherche">
+							</div>
+							<a class="menu__link" href="#"><li>Préparez votre roadtrip</li></a>
+							<a class="menu__link" href="#"><li>Infos générales</li></a>
+							<a class="menu__link" href="#"><li>Blog</li></a>
+							<a class="menu__link" href="#"><li>Mon compte</li></a>
+							<a href="#"><li style="color: #e47f78; border:none;" >Déconnexion</li></a>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="header__logo__container">
+				<a class="header__logo__container__pic" href="index.html"><img src="images/oroadtrip-pin.png" alt="oroadtrip-logo"></a>
+			</div>
+			<div class="header__user__container">
+				<a class="header__user__container__icon displayMenuUser" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
+			</div>
+
+		</header>
+		<section class="background">
+
+		</section>
+
+	<!-- BLOG SECTION / LASTS POSTS -->
+
+		<main class="main__blog">
+			<div class="main__blog__wrapper">
+				<h2 class="main__blog__wrapper__title">o'RoadBlog</h2>
+			</div>
+			<section class="main__blog__posts">
+				<article class="main__blog__posts__article">
+					<div class="main__blog__posts__article__container">
+						<div class="main__blog__posts__article__container">
+							<img class="main__blog__posts__article__container__picture" src="https://picsum.photos/id/451/1545/1024" alt="mountain-image">
+						</div>
+						<div class="main__blog__posts__article__content">
+							<h3 class="main__blog__posts__article__content__title">Lorem</h3>
+							<p class="main__blog__posts__article__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							<a href="" class="main__blog__posts__article__content__link">Lire l'article en entier</a>
+						</div>
+					</div>
+				</article>
+				<article class="main__blog__posts__article">
+					<div class="main__blog__posts__article__container">
+						<img class="main__blog__posts__article__container__picture" src="https://picsum.photos/id/442/1909/1262" alt="mountain-image">
+					</div>
+					<div class="main__blog__posts__article__content">
+						<h3 class="main__blog__posts__article__content__title">Lorem</h3>
+						<p class="main__blog__posts__article__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<a href="" class="main__blog__posts__article__content__link">Lire l'article en entier</a>
+					</div>
+				</article>
+				<article class="main__blog__posts__article">
+					<div class="main__blog__posts__article__container">
+						<img class="main__blog__posts__article__container__picture" src="https://picsum.photos/id/392/5580/3720" alt="mountain-image">
+					</div>
+					<div class="main__blog__posts__article__content">
+						<h3 class="main__blog__posts__article__content__title">Lorem</h3>
+						<p class="main__blog__posts__article__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<a href="" class="main__blog__posts__article__content__link">Lire l'article en entier</a>
+					</div>
+				</article>
+				<article class="main__blog__posts__article">
+					<div class="main__blog__posts__article__container">
+						<img class="main__blog__posts__article__container__picture" src="https://picsum.photos/id/415/5184/3456" alt="mountain-image">
+					</div>
+					<div class="main__blog__posts__article__content">
+						<h3 class="main__blog__posts__article__content__title">Lorem</h3>
+						<p class="main__blog__posts__article__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<a href="" class="main__posts__article__content__link">Lire l'article en entier</a>
+					</div>
+				</article>
+				<article class="main__blog__posts__article">
+					<div class="main__blog__posts__article__container">
+						<img class="main__blog__posts__article__container__picture" src="https://picsum.photos/id/368/4896/3264" alt="mountain-image">
+					</div>
+					<div class="main__blog__posts__article__content">
+						<h3 class="main__blog__posts__article__content__title">Lorem</h3>
+						<p class="main__blog__posts__article__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<a href="" class="main__blog__posts__article__content__link">Lire l'article en entier</a>
+					</div>
+				</article>
+				<article class="main__blog__posts__article">
+					<div class="main__blog__posts__article__container">
+						<img class="main__blog__posts__article__container__picture" src="https://picsum.photos/id/361/5184/3456" alt="mountain-image">
+					</div>
+					<div class="main__blog__posts__article__content">
+						<h3 class="main__blog__posts__article__content__title">Lorem</h3>
+						<p class="main__blog__posts__article__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<a href="" class="main__blog__posts__article__content__link">Lire l'article en entier</a>
+					</div>
+				</article>
+				<article class="main__blog__posts__article">
+					<div class="main__blog__posts__article__container">
+						<img class="main__blog__posts__article__container__picture" src="https://picsum.photos/id/314/4608/3072" alt="mountain-image">
+					</div>
+					<div class="main__blog__posts__article__content">
+						<h3 class="main__blog__posts__article__content__title">Lorem</h3>
+						<p class="main__blog__posts__article__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<a href="" class="main__blog__posts__article__content__link">Lire l'article en entier</a>
+					</div>
+				</article>
+				<article class="main__blog__posts__article">
+					<div class="main__blog__posts__article__container">
+						<img class="main__blog__posts__article__container__picture" src="https://picsum.photos/id/177/2515/1830" alt="mountain-image">
+					</div>
+					<div class="main__blog__posts__article__content">
+						<h3 class="main__blog__posts__article__content__title">Lorem</h3>
+						<p class="main__blog__posts__article__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<a href="" class="main__blog__posts__article__content__link">Lire l'article en entier</a>
+					</div>
+				</article>
+			</section> 
+		</main>
+
+	<!-- FOOTER -->
+
+		<footer class="footer">
+			<div class="footer__menu">
+				<a href="#" class="footer__menu__item">À propos</a>
+				<a href="#" class="footer__menu__item">Mentions légales</a>
+				<a href="#" class="footer__menu__item">Contact</a>
+			</div>
+		</footer>
+	</div>
+
+	<!-- OVERLAY - CONNEXION -->
+
+		<div class="overlay overlay--hidden">
+			<div class="overlay__container">
+				<h3 class="overlay__container__title">Connectez-vous !</h3>
+				<form class="overlay__container__form" action="#" method="post">
+					<div class="overlay__container__form__wrapper">
+						<i class="overlay__container__form__wrapper__icon fa fa-user fa-2x"></i>
+						<input class="overlay__container__form__wrapper__input input__id" type="text" placeholder="Identifiant" required>
+					</div>
+					<div class="overlay__container__form__wrapper">
+						<i class="overlay__container__form__wrapper__icon fa fa-unlock-alt fa-2x"></i>
+						<input class="overlay__container__form__wrapper__input" type="text" placeholder="Mot de passe" required>
+					</div>
+					<div class="overlay__container__form__subtext">
+						<a class="overlay__container__form__subtext__link" href="#">Mot de passe oublié ?</a>
+						<a class="overlay__container__form__subtext__link displaySignupForm" href="#">S'inscrire</a>
+					</div>
+					<div class="overlay__container__form__wrapper-button">
+						<button class="overlay__container__form__wrapper__button input__submit" type="submit">Connexion</button>
+					</div>
+				</form>
+			</div>
+			<a href="#" class="overlay__close-button hideMenuUser"><i class="fa fa-close fa-2x"></i></a>
+		</div>
+
+<!-- FORMULAIRE D'INSCRIPTION -->
+		<div class="overlay__signup overlay__signup--hidden">
+			<div class="overlay__signup__container">
+				<h3 class="overlay__signup__container__title">Inscription</h3>
+				<form class="overlay__signup__container__form" action="#" method="post">
+					<div class="overlay__signup__container__form__wrapper">
+						<i class="overlay__signup__container__form__wrapper__icon fa fa-user fa-2x"></i>
+						<input class="overlay__signup__container__form__wrapper__input" type="text" placeholder="Identifiant" required>
+					</div>
+					<div class="overlay__signup__container__form__wrapper">
+						<i class="overlay__signup__container__form__wrapper__icon fa fa-at fa-2x"></i>
+						<input class="overlay__signup__container__form__wrapper__input" type="email" placeholder="Email" required>
+					</div>
+					<div class="overlay__signup__container__form__wrapper">
+						<i class="overlay__signup__container__form__wrapper__icon fa fa-at fa-2x"></i>
+						<input class="overlay__signup__container__form__wrapper__input" type="email" placeholder="Confirmer l'email" required>
+					</div>
+					<div class="overlay__signup__container__form__wrapper">
+						<i class="overlay__signup__container__form__wrapper__icon fa fa-unlock-alt fa-2x"></i>
+						<input class="overlay__signup__container__form__wrapper__input" type="password" minlength="4" placeholder="Mot de passe" required>
+					</div>
+					<div class="overlay__signup__container__form__wrapper">
+						<i class="overlay__signup__container__form__wrapper__icon fa fa-unlock-alt fa-2x"></i>
+						<input class="overlay__signup__container__form__wrapper__input" type="password" minlength="4" placeholder="Confirmer le mot de passe" required>
+					</div>
+					<div class="overlay__signup__container__form__subtext">
+						<a class="overlay__signup__container__form__subtext__link fa fa-arrow-left returnDisplayMenuUser" href="#"> Retour</a>
+					</div>
+					<button class="overlay__signup__container__form__wrapper__button input__submit" type="submit">Valider</button>
+				</form>
+			</div>
+			<a href="#" class="overlay__close-button hideSignupForm"><i class="fa fa-close fa-2x"></i></a>
+		</div>
+	<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.default-layout {
+
+    &__container {
+        display: grid;
+        grid: {
+            template: {
+                areas:
+                    "background"
+                    "main"
+                    "footer";
+                rows: 20vh auto auto;
+            }
+        }
+        transition: filter $duration-fast;
+
+        &--blurred {
+            filter: blur(5px);
+        }
+    }
+}

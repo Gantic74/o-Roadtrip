@@ -1,0 +1,35 @@
+.main__blog {
+    grid-area: main;
+    max-width: 70%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -1rem;
+
+    &__wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom: 2px solid transparentize($color: $color-primary, $amount: .8);
+
+
+        &__title {
+            text-align: center;
+            margin: 2rem auto;
+            margin-bottom: 3rem;
+            font-size: 3rem;
+
+        }
+    }
+
+    &__posts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 12rem;
+
+        &__article {
+            width: 40%;
+        }
+    }
+}
